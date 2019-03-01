@@ -1,0 +1,16 @@
+{
+  "name": "@zooniverse/testapp",
+  "scripts": {
+    "start": "next"
+  },
+  "dependencies": {
+    "@zooniverse/testlib": "^0.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "grommet": "^2.5.5",
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "styled-components": "^4.1.3"
+  },
+  "version": "0.0.1"
+}

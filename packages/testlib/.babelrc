@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["styled-components", { "preprocess": false }]
+  ],
+  "presets": [
+    "react"
+  ]
+}
