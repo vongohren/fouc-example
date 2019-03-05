@@ -1,6 +1,6 @@
 {
   "plugins": [
-    ["styled-components", { "preprocess": false }]
+    "styled-components"
   ],
   "presets": [
     "react"
