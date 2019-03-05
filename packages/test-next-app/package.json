@@ -1,5 +1,5 @@
 {
-  "name": "@zooniverse/testapp",
+  "name": "@zooniverse/test-next-app",
   "scripts": {
     "build": "next build",
     "start": "next",
