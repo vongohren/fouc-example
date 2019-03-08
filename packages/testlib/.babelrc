@@ -3,6 +3,6 @@
     "styled-components"
   ],
   "presets": [
-    "react"
+    "@babel/react"
   ]
 }
