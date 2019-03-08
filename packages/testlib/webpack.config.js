@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const plugins = [
-  new CleanWebpackPlugin()
+  new CleanWebpackPlugin(),
 ]
 
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'var',
-    library: 'Foo',
+    libraryTarget: 'commonjs2',
+    library: 'testlib',
   },
   plugins,
 }

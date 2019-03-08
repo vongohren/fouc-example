@@ -6,9 +6,8 @@
   "homepage": "",
   "version": "0.0.1",
   "main": "dist/main.js",
-  "module": "dist/es6/index.js",
   "scripts": {
-    "build": "webpack && babel ./src --out-dir ./dist/es6 --copy-files"
+    "build": "webpack"
   },
   "dependencies": {
     "grommet": ">= 2.5.X",

@@ -1,12 +1,9 @@
 {
-  "name": "@zooniverse/test-next-app",
+  "name": "@zooniverse/next-app",
   "scripts": {
     "build": "next build",
     "start": "next",
     "prod": "next start"
-  },
-  "devDependencies": {
-    "@zeit/next-bundle-analyzer": "^0.1.2"
   },
   "dependencies": {
     "@zooniverse/testlib": "^0.0.1",
