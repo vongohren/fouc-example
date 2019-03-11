@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "lerna bootstrap && lerna run build",
-    "start": "lerna run start"
+    "build": "lerna bootstrap && lerna run build --scope @zooniverse/*-lib",
+    "start": "lerna run start --scope @zooniverse/next-app"
   },
   "author": "",
   "license": "ISC",

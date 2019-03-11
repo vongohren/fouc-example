@@ -6,7 +6,8 @@
     "prod": "next start"
   },
   "dependencies": {
-    "@zooniverse/testlib": "^0.0.1",
+    "@zooniverse/grommet-lib": "^0.0.1",
+    "@zooniverse/styled-components-lib": "^0.0.1",
     "babel-plugin-styled-components": "^1.10.0",
     "grommet": "^2.5.5",
     "next": "^8.0.3",

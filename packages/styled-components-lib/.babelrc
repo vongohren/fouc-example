@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["styled-components", { "ssr": true }]
+  ],
+  "presets": [
+    "@babel/react"
+  ]
+}
