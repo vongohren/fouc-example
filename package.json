@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna bootstrap && lerna run build --scope @zooniverse/*-lib",
-    "start": "lerna run start --scope @zooniverse/next-app"
+    "start": "ndb lerna run start --scope @zooniverse/next-app",
+    "cleanup": "lerna clean -y && rm -rf node_modules/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^3.13.1"
+    "lerna": "^3.13.1",
+    "ndb": "^1.1.5"
   }
 }
