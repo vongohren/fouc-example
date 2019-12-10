@@ -9,6 +9,9 @@ module.exports = {
   devtool: 'hidden-source-map',
   entry: './src/index.js',
   mode: 'production',
+  externals: {
+    styledComponents: 'styled-components'
+  },
   module: {
     rules: [
       {

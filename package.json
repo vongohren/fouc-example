@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna bootstrap && lerna run build --scope @zooniverse/*-lib",
-    "start": "ndb lerna run start --scope @zooniverse/next-app",
+    "start": "lerna run start --scope @zooniverse/next-app",
+    "ndb-start": "ndb lerna run start --scope @zooniverse/next-app",
     "cleanup": "lerna clean -y && rm -rf node_modules/"
   },
   "author": "",

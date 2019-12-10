@@ -1,6 +1,14 @@
 {
   "plugins": [
-    ["styled-components", { "ssr": true }]
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false,
+        "minify": false
+      }
+    ]
   ],
   "presets": [
     "@babel/react"
