@@ -1,18 +1,24 @@
 {
   "name": "fouc-example",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/tsdx-comps-lib",
+    "packages/next-app"
+  ],
   "scripts": {
-    "build": "lerna bootstrap && lerna run build --scope @zooniverse/*-lib",
-    "start": "lerna run start --scope @zooniverse/next-app",
-    "ndb-start": "ndb lerna run start --scope @zooniverse/next-app",
+    "build": "lerna run build --stream --scope '{tsdx-styled-comps-lib}'",
+    "start": "lerna run start --stream --scope next-app",
+    "ndb-start": "ndb lerna run start --scope next-app",
     "cleanup": "lerna clean -y && rm -rf node_modules/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lerna": "^3.13.1",
-    "ndb": "^1.1.5"
+    "ndb": "^1.1.5",
+    "rollup": "^1.27.13"
   }
 }
