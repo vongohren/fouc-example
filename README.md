@@ -30,6 +30,16 @@ Im only able to achieve with two different setups, see old-setup branch:
 * Either only client load, getting a flash of unstyled content
 * Full loading from next.js, but the client that mounts after load, is unstyled. This problem is the one that is on master now.
 
+Have some issues out for feelers:
+https://github.com/zeit/next.js/issues/9812
+https://github.com/jaredpalmer/tsdx/issues/390
+
+Other issues related to my first attempt with webpack, see branch, old-setup:
+https://github.com/emotion-js/emotion/issues/1516
+https://github.com/styled-components/styled-components/issues/2442
+https://github.com/kiwicom/orbit-components/issues/1404
+
+
 # Alternative solution angles
 
 ## CJS not for frontend
