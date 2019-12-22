@@ -6,11 +6,14 @@
     "prod": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "next": "^8.0.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^4.4.1",
-    "tsdx-styled-comps-lib": "0.1.0"
+    "tsdx-styled-comps-lib": "0.1.0",
+    "tsdx-emotion-comps-lib": "0.1.0"
   },
   "version": "0.0.1",
   "devDependencies": {
