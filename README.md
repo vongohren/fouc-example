@@ -4,20 +4,43 @@ Trying to build a component library with CSS in JS libraries, to then load throu
 ## Get running
 
 ```
-npm install
-npm run build
-npm start
+yarn install
+yarn run build
+yarn start
 ```
 
 Opens up a server at localhost:3000
 
+Want to see the storybook of the component library.
+
+Go to packages/tsdx-styled-comps-lib
+run yarn storybook
+
+# Issue in gifs
+When loaded with next
+![Next setup](./assets/nextproducedcode.gif)
+When loaded inside the storybook
+![Storybook setup](./assets/storybook.gif)
+
 # Background
-The main problem is that the style flickers before it loads.
-https://github.com/styled-components/styled-components/issues/2322
-https://github.com/styled-components/styled-components/issues/2442
-https://github.com/styled-components/styled-components/issues/1860
+Trying to get styled-componenst with a component library to load properly in next.js
+It is difficult to get that to work! Tried all different setups.
 
-This is styled-components related
-But not getting it to work with emotion either
+Im only able to achieve with two different setups, see old-setup branch: 
+* Either only client load, getting a flash of unstyled content
+* Full loading from next.js, but the client that mounts after load, is unstyled. This problem is the one that is on master now.
 
-Linaria does not work either, even if I got it to work at some point :P
+# Alternative solution angles
+
+## CJS not for frontend
+I thought maybe commonJS was not able to transpile in fronted, went to ESM as can be seen in package.json -> main. But this did not help.
+Tried the same for UMD, to no luck
+
+## Using different packages of styled-components
+This is not an issue now, as I use peer depenedencies and yarn workspace so they share the same package. It works for react so guess it should work for styled-components.
+
+## Client doesnt load
+Well it does as the javascript works fine.
+I even removed the code that is in pages/_document.js, then the preview coming from the backend, is unstyled, and I get a flashed of unstyled content.
+So the client loads, but missing styles of unmounted code.
+

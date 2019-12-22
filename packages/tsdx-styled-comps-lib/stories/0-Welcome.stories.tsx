@@ -1,5 +1,5 @@
 import React from 'react';
-import Bar from '@';
+import { Bar } from '@';
 
 export default {
   title: 'Welcome',

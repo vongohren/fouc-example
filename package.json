@@ -5,11 +5,11 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "packages/tsdx-comps-lib",
+    "packages/tsdx-styled-comps-lib",
     "packages/next-app"
   ],
   "scripts": {
-    "build": "lerna run build --stream --scope '{tsdx-styled-comps-lib}'",
+    "build": "lerna run build --stream --scope tsdx-styled-comps-lib",
     "start": "lerna run start --stream --scope next-app",
     "ndb-start": "ndb lerna run start --scope next-app",
     "cleanup": "lerna clean -y && rm -rf node_modules/"
