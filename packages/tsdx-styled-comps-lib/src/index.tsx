@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import logo from '../assets/logo_brandmark.png'
 
 let log = console.log.bind(console);
 
@@ -13,6 +14,10 @@ const Div2 = styled.div`
 
 const Button = styled.button`
   background: green;
+`
+
+const Img = styled.img`
+  width: 100px;
 `
 
 function useMount({ onMount, onUnmount }: {onMount:any, onUnmount:any}) {
@@ -54,6 +59,7 @@ export const Bar = () => {
   }
   return (
     <>
+      <Img src={logo} alt={'a logo'}/>
       <Div ref={ref}>bar</Div>
       <Button onClick={()=>{setShow(!show)}}>{click}</Button>
     </>
