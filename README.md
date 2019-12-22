@@ -33,11 +33,15 @@ Im only able to achieve with two different setups, see old-setup branch:
 Have some issues out for feelers:
 https://github.com/zeit/next.js/issues/9812
 https://github.com/jaredpalmer/tsdx/issues/390
+A couple of similar questions:
+https://spectrum.chat/styled-components/general/next-js-ssr-client-side-style-tags-empty~d723f9ad-65d7-423c-aeed-e456ae6d87b5
+https://spectrum.chat/next-js/general/third-party-component-library-using-css-modules~f5dfdd04-7e29-4ed3-8693-7e5220933ea3
 
 Other issues related to my first attempt with webpack, see branch, old-setup:
 https://github.com/emotion-js/emotion/issues/1516
 https://github.com/styled-components/styled-components/issues/2442
 https://github.com/kiwicom/orbit-components/issues/1404
+
 
 
 # Alternative solution angles
