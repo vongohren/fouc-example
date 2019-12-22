@@ -58,3 +58,7 @@ Well it does as the javascript works fine.
 I even removed the code that is in pages/_document.js, then the preview coming from the backend, is unstyled, and I get a flashed of unstyled content.
 So the client loads, but missing styles of unmounted code.
 
+## Get rid of HTML div in div
+`index.js:1 Warning: Did not expect server HTML to contain a <div> in <div>.`
+This is a different problem, it is showcased even what ever component I send through
+
